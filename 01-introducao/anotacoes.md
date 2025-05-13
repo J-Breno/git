@@ -27,3 +27,6 @@ git log
 git log --oneline
 
 Git Diff mostra a diferença de arquivos modificados
+
+Git checkout permite temporariamente os arquivos do projeto ao estado de um dado commit ou branch
+
