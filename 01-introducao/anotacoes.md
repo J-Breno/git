@@ -21,3 +21,9 @@ git config --global user\.name "Seu nome"
 git config --global user\.email "Seu email de cadastro do github"
 
 git config --list
+
+## Verificando o histório de versões 
+git log
+git log --oneline
+
+Git Diff mostra a diferença de arquivos modificados
