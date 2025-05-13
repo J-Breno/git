@@ -1,32 +1,44 @@
 # Git e Github
 
-## Introdução
+## 📌 Introdução
 
-O git é um sistema de versionamento para controlar versões(commits) de algum projeto
-O github é um serviço online de hospedagem para o git
+- **Git**: Sistema de versionamento para controlar versões (commits) de projetos
+- **Github**: Serviço online de hospedagem para repositórios Git
 
-Um projeto que está sendo controlado pelo git é chamado de repositorioi de versionamento.
+🔹 Um projeto controlado pelo Git é chamado de **repositório de versionamento**.
 
-### Repoisitorio remoto x local
+### 🔄 Repositório Remoto vs Local
 
-Tipicamente uma cópia "oficial" do repositório fica salvo em um servidor(repositório remoto)
+| Tipo          | Descrição                                                                 |
+|---------------|---------------------------------------------------------------------------|
+| **Remoto**    | Cópia "oficial" armazenada em um servidor (ex: Github)                   |
+| **Local**     | Cópia no computador do desenvolvedor, onde as alterações são feitas      |
 
-Cada pessoa que trabalha no projeto pode fazer uma cópia do repositório para seu computador(repositório local). A pessoa então faz suas alterações no projeto(novos commits) e depois salva as alterações no servidor.
+🔹 Fluxo típico:
+1. Desenvolvedor clona o repositório remoto (`git clone`)
+2. Faz alterações localmente
+3. Cria novos commits
+4. Envia as alterações de volta ao servidor
 
-Quando você faz git clone você clona o repositorio e não o  arquivo
+⚠️ Importante: `git clone` copia o **repositório completo** (com todo histórico), não apenas os arquivos atuais.
 
-## Configuração de identificação github
+## ⚙️ Configuração Inicial
 
-git config --global user\.name "Seu nome"
-git config --global user\.email "Seu email de cadastro do github"
+```bash
+# Configurar identidade
+git config --global user.name "Seu nome"
+git config --global user.email "Seu email de cadastro do github"
 
+# Verificar configurações
 git config --list
 
-## Verificando o histório de versões 
+# Mostra o histórico completo
 git log
+
+# Versão resumida (uma linha por commit)
 git log --oneline
 
-Git Diff mostra a diferença de arquivos modificados
+git diff: Mostra diferenças em arquivos modificados
 
-Git checkout permite temporariamente os arquivos do projeto ao estado de um dado commit ou branch
-
+git checkout: Permite reverter arquivos temporariamente para o estado de um commit ou branch específico
+```
