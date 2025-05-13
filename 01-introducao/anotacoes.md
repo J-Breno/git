@@ -14,3 +14,10 @@ Tipicamente uma cópia "oficial" do repositório fica salvo em um servidor(repos
 Cada pessoa que trabalha no projeto pode fazer uma cópia do repositório para seu computador(repositório local). A pessoa então faz suas alterações no projeto(novos commits) e depois salva as alterações no servidor.
 
 Quando você faz git clone você clona o repositorio e não o  arquivo
+
+## Configuração de identificação github
+
+git config --global user\.name "Seu nome"
+git config --global user\.email "Seu email de cadastro do github"
+
+git config --list
