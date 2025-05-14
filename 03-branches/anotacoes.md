@@ -50,3 +50,11 @@ Uma vez que o branch de feature esteja devidamente mesclado, cria-se um pull req
 
 (main) git merge ft-login
 
+### Procedimento pull request
+
+***não*** se faz atualização no branch main do repositório remoto enquanto a feature não estiver **homologada**. Isso porque o branch main tipicamente está configurado com um processo automatizado de CI/CD, ou seja, atualizações na branch main já disparam automaticamente uma nova build da aplicação, e/ou até mesmo a **implantação** da atenção em ambiente de **produção**.
+
+Ou seja, primeiro voce tem que puxar algo que esteja no main para a sua feature para ver se tem alguma atualização, ai depois voce puxar o que tá na feature para o main.
+
+Ou seja, voce volta para o main, e faz um git pull origin main lá para garatir que não tem nenhuma atualização lá no remoto que não tem no local. ai depois voce volta para a branch de feature com o git checkout <nome-da-branch> e dá um git merge nele, do main para a feature, ou seja, git merge main. e depois voce salva o git de feature lá no git hub com o git push -u origin <nome-da-branch>
+
