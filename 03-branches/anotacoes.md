@@ -36,3 +36,17 @@ para mudar de branch voce tem que fazer o:
     git checkout <nome-da-branch>
 ```
 
+### Merge fast forward
+
+A operação merge serve para mesclar o histórico de uma branch de origem para uma branch de destino.
+
+O camando git pull pode ser entendido como um "merge" entre o branch remoto para o repositório local
+
+O comando do merge deve ser feito a partir do branch de DESTINO.
+
+O correto é fazer um merge do branch main para o branch de feature, e não o contrário.
+
+Uma vez que o branch de feature esteja devidamente mesclado, cria-se um pull request no repositório remoto.
+
+(main) git merge ft-login
+
