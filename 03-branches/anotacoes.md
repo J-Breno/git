@@ -58,3 +58,14 @@ Ou seja, primeiro voce tem que puxar algo que esteja no main para a sua feature 
 
 Ou seja, voce volta para o main, e faz um git pull origin main lá para garatir que não tem nenhuma atualização lá no remoto que não tem no local. ai depois voce volta para a branch de feature com o git checkout <nome-da-branch> e dá um git merge nele, do main para a feature, ou seja, git merge main. e depois voce salva o git de feature lá no git hub com o git push -u origin <nome-da-branch>
 
+### Procedimento fork + pull request
+
+Mesmo que voce não tenha permissão de escrita em um repositório do Github, voce pode enviar contribuições para repositório.
+
+Este procedimento é a base para colaboração em projetos de código aberto.
+
+faça um fork do repositório para o seu Github
+clone seu repositório "forkado" para seu computador
+crie um novo branch faça as alterações nesse branch
+envie as alterações para seu reposítório "forkado"
+crie uma pull request para o reposisório original
